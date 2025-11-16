@@ -2,10 +2,12 @@
 import Home from "./pages/user/Home";
 import Explore from "./pages/user/Explore";
 import SignIn from "./pages/user/SignIn";
+import SignUp from "./pages/user/SignUp";
 import RestaurantDetail from "./pages/user/RestaurantDetail";
 import { Routes, Route, Link } from "react-router-dom";
 import Button from "./components/Button";
 import "./App.css";
+
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/signUp" element={<SignUp />} />
           <Route path="/restaurant/:id" element={<RestaurantDetail />} />
         </Routes>
       </main>
